@@ -1,0 +1,5 @@
+# Ignore Environmental vars
+.env
+
+# Mac stuff
+.DS_Store
