@@ -1,7 +1,9 @@
 # Crash Data Analysis for Montgomery County, Maryland
 
 ## Project Overview
-This project provides an in-depth analysis of vehicle crash data in Montgomery County, Maryland. The data was sourced from [data.gov](https://data.gov) and has been processed and analyzed using various parameters, including datetime, geolocation, road surface conditions, and weather conditions. The project also utilizes **Prophet** for seasonal pattern detection and predictions related to weather-based accidents.
+This project analyzes vehicle crash data from Montgomery County, Maryland, focusing on multiple factors such as date/time, geolocation, road surface conditions, and weather patterns. Using tools like **GeoPandas** and **Prophet**, this project explores spatial trends and predicts crash patterns based on historical data. 
+
+The analysis aims to provide insights into how various factors contribute to vehicle accidents, which can aid in improving road safety strategies in Montgomery County.
 
 ## Table of Contents
 - [Data Source](#data-source)
@@ -116,12 +118,29 @@ Each Jupyter Notebook file in the `Code/` folder performs specific types of anal
 - **File**: `weather_analysis.ipynb`
 - **Description**: This notebook focuses on weather-related crash analysis. It looks into the correlation between weather conditions (e.g., rain, fog, snow) and crashes. **Prophet** is also used for seasonal pattern detection and future crash predictions based on weather data.
 
-## Results
+## Analysis Results
 The analyses provided insights into various factors affecting vehicle crashes in Montgomery County, Maryland, including:
-- **Time-based patterns**: Identifying peak crash times during the day or on specific days of the week.
-- **Geolocation analysis**: Mapping crashes and identifying potential accident-prone areas.
-- **Surface condition analysis**: Understanding how different road surface conditions impact crash frequency and severity.
-- **Weather analysis**: Predicting possible future crash trends using Prophet and identifying the influence of weather conditions on accidents.
+- **Time-based patterns**: 
+![Accidents by year](Resources/accidents_by_year.png)
+    - Overall number of crashes are following a bucket of 10k to 12k per year.
+    - Ther is a significan reduction in crashes during COVID-19 era but it is coming back to follow the same pattern.
+- **Geolocation analysis**:
+![Geolocation Analysis](Resources/heatmap.png)
+    - There are hotspots for frequent crashes around intersections.
+    - There are few highway patches were fatal crashes happens more frequently.
+    - There are pockets of crashes during snow days.
+- **Surface condition analysis**:
+![Surface Conditions by crashes](Resources/surface_conditions.png)
+    - Surface conditions do not correlate much with number of crashes and severity of injuries.
+- **Weather analysis**: 
+![Weather Conditions by crashes](Resources/weather.png)
+    - Weather conditions do not correlate much with number of crashes and severity of injuries.
+- **Near future predictions**:
+![Prediction](Resources/prediction.png)
+![Trends](Resources/trends.png)
+    - Even though the year 2020 has resulted into significant reduction in accidents, the prediction suggests that the trend is falling back on its historical number.
+    - Fridays look like worst day in terms of driving saftey.
+    - November appears to be worse month in terms of accidents monthly distribution.
 
 ## Contributing
 We welcome contributions to the project! If you'd like to contribute, please follow these steps:
