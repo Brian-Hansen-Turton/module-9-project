@@ -32,17 +32,19 @@ The project is organized into three main folders: `Code`, `Documentation`, and `
 │   ├── datetime_analysis.ipynb          # Analysis based on various datetime parameters
 │   ├── geolocation_analysis.ipynb       # Analysis based on geolocation using GeoPandas
 │   ├── surface_condition_analysis.ipynb # Analysis based on road surface conditions
-│   ├── weather_analysis.ipynb           # Analysis based on weather conditions, with Prophet predictions
+│   └── weather_analysis.ipynb           # Analysis based on weather conditions, with Prophet predictions
 │
 ├── Documentation
-│   ├── project_overview.md              # High-level overview of the project
-│   └── detailed_analysis.md             # Detailed analysis and findings
+│   ├── AAA Presentation.pptx            # Final version of project presentation
+│   └── Heap_Map_Brief.docx              # Brief on heat map plotting of crash data
 │
 ├── Resources
+|   ├── various images                   # Graphs and charts used in README.md
 │   ├── Montgomery_Crash_Data.csv        # Raw crash data (downloaded CSV)
 │   └── Montgomery_County.json           # Geo boundary JSON for Montgomery County
 │
-└── README.md                            # Project README
+├── README.md                            # Project README
+└── requirements.txt                     # List of python modules and libraries
 ```
 - `Code/`: Contains all the Jupyter Notebook files for downloading, cleaning, and analyzing the crash data.
 - `Documentation/`: Contains additional documentation, such as the project overview and detailed analysis reports.
